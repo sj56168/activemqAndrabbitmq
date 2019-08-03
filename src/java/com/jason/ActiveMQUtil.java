@@ -13,6 +13,8 @@ public class ActiveMQUtil {
     }
     public static void checkServer() {
         if(NetUtil.isUsableLocalPort(8161)) {
+
+            System.out.println("hello");
             JOptionPane.showMessageDialog(null, "ActiveMQ 服务器未启动 ");
             System.exit(1);
         }
